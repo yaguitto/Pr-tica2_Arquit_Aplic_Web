@@ -1,0 +1,36 @@
+body {
+    display:flex;
+    flex-direction: column;
+    background-color: #1f1f1f;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+body h1{
+    
+    color: green;
+}
+li {
+    list-style-type: none;
+    color: grey;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#titulo{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+#buttom{
+    color:white;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+#excluir{
+    color: white;
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+}

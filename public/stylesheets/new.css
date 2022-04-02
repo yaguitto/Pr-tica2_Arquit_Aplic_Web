@@ -1,0 +1,42 @@
+body{
+    display:flex;
+    background-color: #1f1f1f;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    flex-direction: column;
+}
+body h1{
+    margin: 1rem auto;
+    color: green;
+}
+p {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.2rem;
+}
+form{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+form div{
+    display: flex;
+    justify-content: center;
+}
+#salvar{
+    width: 30%;
+    background-color: green;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    border-style: none;
+
+}
+input{
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='stylesheets/index.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <ul>
+      <% docs.forEach(function(customer){ %>
+        <li id="titulo"> 
+          <p>
+            <a href="/edit/<%= customer._id %>"> <%= customer.titulo %> </a> &nbsp;
+            <a
+              href="/delete/<%= customer._id %>"
+              onclick="return confirm('Tem certeza que deseja excluir?');"
+              id="excluir"
+            >
+              Excluir
+            </a>
+          </p>
+        </li>
+        <li>Sinopse: <%= customer.sinopse %></li>
+        <li>Duração: <%= customer.duracao %></li>
+        <li>Data Lançamento: <%= customer.dataLancamento %></li>
+        <li>Categorias: <%= customer.categorias %></li>
+      <% }) %>
+    </ul>
+<hr />
+  <a href="/new" id="buttom">Cadastrar Novo Filme</a>
+</body>
+</html>
